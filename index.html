@@ -2,7 +2,7 @@
 <html>
 
 
-<head><title>Intro to JS in a Browser test</title></head>
+<head><title>Intro to JS in a Browser </title></head>
 
 <body>
 
@@ -78,11 +78,20 @@ function calc(){
     var t = document.getElementById("target");
     t.innerHTML = divis(document.getElementById('num').value, 3);
 }
+
+function calc2(){
+    var t = document.getElementById("target");
+    t.innerHTML = reverseString(document.getElementById('strrr').value);
+}
 </script>
 <p>
 <form>
     <input id="num" type="number" size="4">
     <input type="button" value="check" onClick="calc();">
+</form>
+<form>
+    <input id="strrr" type="test" size="4">
+    <input type="button" value="check" onClick="calc2();">
 </form>
 </p>
 
