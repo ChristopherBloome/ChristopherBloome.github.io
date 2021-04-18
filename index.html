@@ -50,7 +50,7 @@ document.write('<p>Right now it is ' + rightNow + '<p>');
 
 <script type="text/javascript">
 
-document.write('<br><p>Is a number even or odd, is it divisible by 3?')
+document.write('<br><p>Lets flip that string!')
 
 // Basic functions
 
@@ -83,6 +83,18 @@ function calc2(){
     var t = document.getElementById("target");
     t.innerHTML = reverseString(document.getElementById('strrr').value);
 }
+
+function myFunction(name) {
+  return "Hello " + name;
+}
+
+function calc3(){
+    var t = document.getElementById("target");
+    t.innerHTML = myFunction(document.getElementById('str2').value);
+}
+
+
+
 </script>
 <p>
 <form>
@@ -90,9 +102,16 @@ function calc2(){
     <input type="button" value="check" onClick="calc();">
 </form>
 <form>
-    <input id="strrr" type="test" size="4">
+    <input id="strrr" type="text" size="4">
     <input type="button" value="check" onClick="calc2();">
 </form>
+<form>
+    <input id="str2" type="text" size="4">
+    <input type="button" value="check" onClick="calc3();">
+</form>
+
+
+
 </p>
 
 <div id="target"></div>
