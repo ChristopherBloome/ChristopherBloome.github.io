@@ -12,7 +12,7 @@
 
 <script type="text/javascript">
 
-document.write('<br><p>Lets flip that string!')
+document.write('<br><p>This function flips a text string!')
 
 // Basic functions
 
@@ -60,6 +60,11 @@ function calc3(){
     t.innerHTML = tableCreate(document.getElementById('str2').value);
 }
 
+function calc3(){
+    var t = document.getElementById("target");
+    t.innerHTML = tableCreate(document.getElementById('str2').value);
+}
+
 function tableCreate(num){
  var body = document.body,
  tbl  = document.createElement('table');
@@ -76,8 +81,7 @@ function tableCreate(num){
            
         
     }
-  }
-	location.reload();	
+  }	
 	body.appendChild(tbl)
  }
 
@@ -90,11 +94,16 @@ function tableCreate(num){
     <input id="strrr" type="text" size="4">
     <input type="button" value="Flip!" onClick="calc2();">
 </form>
+document.write('<br><p>This function geneartes a 4x5 table of multiples of a given number!')
 <form>
     <input id="str2" type="text" size="4">
     <input type="button" value="Generate!" onClick="calc3();">
 </form>
-
+document.write('<br><p>This function gets rid of the tables we generated!')
+<form>
+    <input id="str2" type="text" size="4">
+    <input type="button" value="Clear!" onClick="location.reload();">
+</form>
 
 
 </p>
